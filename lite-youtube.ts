@@ -294,7 +294,7 @@ export class LiteYTEmbed extends HTMLElement {
       }
 
       const iframeHTML = `
-<iframe frameborder="0" ${this.hasAttribute('anonymous') ? 'anonymous' : ''}
+<iframe frameborder="0" ${this.hasAttribute('credentialless') ? 'credentialless' : ''}
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube${wantsNoCookie}.com/embed/${embedTarget}autoplay=${autoplay}&${this.params}"
 ></iframe>`;
